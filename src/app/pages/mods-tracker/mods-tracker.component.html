@@ -1,0 +1,63 @@
+<div class="container-xl mx-auto">
+    <mat-sidenav-container class="h-screen">
+        <!-- Menú Lateral -->
+        <mat-sidenav 
+            #sidenav 
+            class="bg-gray-800 text-white w-[25%]" 
+            mode="side" 
+            [opened]="true"
+            [fixedInViewport]="true" 
+            fixedTopGap="70"
+            >
+            <div class="p-4">
+                <h2 class="text-xl font-bold">Categories</h2>
+                @for (category of tasks(); track category; let i = $index) {
+                    <div class="my-3 mx-0">
+                        <span>
+                            <mat-checkbox 
+                                [checked]="category.completed" 
+                                [indeterminate]="partiallyComplete()[i]"
+                                (change)="update(i, $event.checked!)"
+                                >
+                                {{ category.name }}
+                            </mat-checkbox>
+                        </span>
+                        
+                        @if (category.subtasks?.length) {
+                            <div class="ml-4">
+                                <ul class="mt-1">
+                                    @for (subcategory of category.subtasks; track subcategory; let j = $index) {
+                                        <li class="mx-3">
+                                            <mat-checkbox 
+                                                [checked]="subcategory.completed" 
+                                                (change)="update(i, $event.checked!, j)"
+                                                >
+                                                {{ subcategory.name }}
+                                            </mat-checkbox>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </mat-sidenav>
+
+        <!-- Contenido Principal -->
+        <mat-sidenav-content class="p-4 w-full md:w-[75%]">
+            <mat-toolbar color="primary">
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <span class="ml-4">Mods availables</span>
+            </mat-toolbar>
+
+            <div class="p-4">
+                <ng-content>
+                    {{ mods | async | json }}
+                </ng-content>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

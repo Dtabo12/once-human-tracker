@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Deviation Expert",
+        "description": "Range -25%, Fire Rate +10%, Status DMG +20%",
+        "category": {
+            "id": 1,
+            "name": "Helmet"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Elemental Havoc",
+        "description": "Elemental DMG +10%. When HP is above 90%, 10% additionally",
+        "category": {
+            "id": 1,
+            "name": "Helmet"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Fateful Strike",
+        "description": "Cannot deal Weakspot DMG. Crit rate +10% and Crit DMG +30%",
+        "category": {
+            "id": 1,
+            "name": "Helmet"
+        }
+    },
+    {
+        "id": 4,
+        "name": "First Move Advantage",
+        "description": "After reloading, Crit Rate +10%, Crit DMG +20% for 2s",
+        "category": {
+            "id": 1,
+            "name": "Helmet"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Mag Expansion",
+        "description": "When the magazine is empty, Magazine Capacity +30%",
+        "category": {
+            "id": 1,
+            "name": "Helmet"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Momentum Up",
+        "description": "Fire Rate +10% for the first 50% of the magazine and Weapon DMG +30% for the next 50% of the magazine",
+        "category": {
+            "id": 1,
+            "name": "Helmet"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Precise Strike",
+        "description": "Hitting Weakspot grants +12.0% Weakspot DMG for 3 seconds, up to 3 stacks",
+        "category": {
+            "id": 1,
+            "name": "Helmet"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Work of Proficiency",
+        "description": "Reloading an empty mag grants +10% Reload Speed and +15.0% Status DMG, lasting until the next reload",
+        "category": {
+            "id": 1,
+            "name": "Helmet"
+        }
+    }
+]

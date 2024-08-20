@@ -25,20 +25,22 @@
 
             <div class="flex flex-1 justify-center sm:items-center sm:justify-start">
                 <div class="flex flex-shrink-0 items-center">
-                    <img 
-                        class="h-10 w-auto" 
-                        src="https://www.oncehuman.game/pc/fab/20240706164218/img/logo_1098a5d6.png"
-                        alt="Once Human Traker"
-                    />
+                    <a routerLink="">
+                        <img 
+                            class="h-10 w-auto" 
+                            src="https://www.oncehuman.game/pc/fab/20240706164218/img/logo_1098a5d6.png"
+                            alt="Once Human Traker"
+                        />
+                    </a>
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4 justify-center items-center">
-                        <button type="button" class="bg-sky-700 hover:bg-rose-800 px-2 py-1 rounded transition ease-in-out delay-150" mat-stroked-button (click)="onNavigate()">
+                        <a routerLink="mods" class="bg-sky-700 hover:bg-rose-800 px-2 py-1 rounded transition ease-in-out delay-150" mat-stroked-button>
                             <span class="text-white">Mod Tracker</span>
-                        </button>
-                        <button type="button" class="bg-sky-700 hover:bg-rose-800 px-2 py-1 rounded transition ease-in-out delay-150" mat-stroked-button (click)="onNavigate('map')">
+                        </a>
+                        <a [href]="interactiveMapUrl" target="_blank" class="bg-sky-700 hover:bg-rose-800 px-2 py-1 rounded transition ease-in-out delay-150" mat-stroked-button>
                             <span class="text-white">Interactive Map</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

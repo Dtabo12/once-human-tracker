@@ -1,12 +1,19 @@
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { ImagePathPipe } from '@shared/pipes';
 import { Observable, of } from 'rxjs';
+
+const IMPORTS: CommonModule[] = [
+  RouterLink,
+  AsyncPipe,
+  ImagePathPipe
+];
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [AsyncPipe, ImagePathPipe],
+  imports: [IMPORTS],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -14,9 +21,7 @@ export class HeaderComponent {
 
   shouldRenderDropdown$: Observable<boolean> = new Observable<boolean>();
 
-  onNavigate(route?: string): void {
-    if (route) window.open('https://oncehuman.th.gl/', '_blank');
-  }
+  interactiveMapUrl: string = 'https://oncehuman.th.gl/';
 
   onDeployDropdown(): void {
     this.shouldRenderDropdown$ = of(true);
