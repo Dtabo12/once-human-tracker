@@ -1,5 +1,5 @@
 <div class="container-xl mx-auto">
-    <mat-sidenav-container class="h-screen">
+    <mat-sidenav-container class="h-[95vh]">
         <!-- Menú Lateral -->
         <mat-sidenav 
             #sidenav 
@@ -45,7 +45,7 @@
         </mat-sidenav>
 
         <!-- Contenido Principal -->
-        <mat-sidenav-content class="p-4 w-full md:w-[75%]">
+        <mat-sidenav-content class="p-4 w-full md:w-[75%] overflow-hidden">
             <mat-toolbar color="primary">
                 <button mat-icon-button (click)="sidenav.toggle()">
                     <mat-icon>menu</mat-icon>
@@ -55,7 +55,12 @@
 
             <div class="p-4">
                 <ng-content>
-                    {{ mods | async | json }}
+                    <!-- {{ mods | async | json }} -->
+                    <div class="grid grid-cols-6 gap-4">
+                        @for (mod of (mods | async); track mod.id) {
+                            <app-mod-card [mod]="mod" />
+                        }
+                    </div>
                 </ng-content>
             </div>
         </mat-sidenav-content>

@@ -8,6 +8,7 @@ import { Store } from '@ngrx/store';
 import { modActions } from '../stores/mod.action';
 import { selectData } from '../stores/mod.reducer';
 import { ModCategories } from '../types/mods-categories.type';
+import { SharedModule } from '@shared/shared.module';
 
 const IMPORTS: CommonModule[] = [
   CommonModule,
@@ -15,6 +16,7 @@ const IMPORTS: CommonModule[] = [
   MatToolbarModule,
   MatIconModule,
   MatCheckboxModule,
+  SharedModule,
   AsyncPipe,
   JsonPipe
 ];
@@ -35,7 +37,6 @@ export class ModsTrackerComponent implements OnInit {
 
   ngOnInit(): void {
     this.store.dispatch(modActions.loadMods());
-    console.log('🚩Component: list of mods:', this.mods);
   }
 
   readonly tasks = signal<ModCategories[]>([

@@ -11,7 +11,6 @@ export const modEffects = createEffect(
       switchMap(() =>
         modService.getMods().pipe(
           map((res) => {
-            console.log('🔎res fetching the mods:', res);
             return modActions.loadModsSuccess({ response: res });
           }),
           catchError((error) => {

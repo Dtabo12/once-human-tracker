@@ -26,7 +26,7 @@
                 "input": "public"
               },
               "src/assets/data/mods.json",
-              "src/assets/"
+              "src/assets"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/cyan-orange.css",
@@ -93,7 +93,7 @@
                 "input": "public"
               },
               "src/assets/data/mods.json",
-              "src/assets/"
+              "src/assets"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/cyan-orange.css",

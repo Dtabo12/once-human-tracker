@@ -1,4 +1,4 @@
-import { AsyncPipe, CommonModule } from '@angular/common';
+import { AsyncPipe, CommonModule, JsonPipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
@@ -14,7 +14,9 @@ const COMMON_IMPORTS = [
   MatSidenavModule,
   MatButtonModule,
   SharedModule,
-  HeaderComponent
+  HeaderComponent,
+  AsyncPipe,
+  JsonPipe,
 ];
 
 @Component({

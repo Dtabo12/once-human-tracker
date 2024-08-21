@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ImagePathPipe implements PipeTransform {
 
-  private basePath: string = 'images';
+  private basePath: string = 'assets/images';
 
   transform(value: string): string {
     if (!value) return '';

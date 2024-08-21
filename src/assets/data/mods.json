@@ -70,5 +70,95 @@
             "id": 1,
             "name": "Helmet"
         }
+    },
+    {
+        "id": 9,
+        "name": "Blaze Amplifier",
+        "description": "Every stack of Burn grants +3% Psi Intensity DMG",
+        "category": {
+            "id": 2,
+            "name": "Mask"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Blitzkrieg",
+        "description": "Fast Gunner stacks +5 and additional Fire Rate +1% fir each stack",
+        "category": {
+            "id": 2,
+            "name": "Mask"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Break Bounce",
+        "description": "When a bullet hits an enemy with HP above 50% the bullet's Ultimate DMG +50%",
+        "category": {
+            "id": 2,
+            "name": "Mask"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Delayed Blast",
+        "description": "Vefore the bomb explodes, for every 5 hits taken, the bomb's Ultimate DMG +12%",
+        "category": {
+            "id": 2,
+            "name": "Mask"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Explosive Shrapnel",
+        "description": "The 20th Shrapnel is explosive and deals +300% DMG with guaranteed critical hit",
+        "category": {
+            "id": 2,
+            "name": "Mask"
+        }
+    },
+    {
+        "id": 9,
+        "name": "First Electrocution",
+        "description": "For enemies without Power Surge status, Power Surge's Ultimate DMG +30%",
+        "category": {
+            "id": 2,
+            "name": "Mask"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Gunslinger",
+        "description": "When in Fast Gunner status, Weakspot DMG +30%",
+        "category": {
+            "id": 2,
+            "name": "Mask"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Light Cannon",
+        "description": "No Super Armor inside Fortress Warfare while in Fortress Warfare state, Attack +12%",
+        "category": {
+            "id": 2,
+            "name": "Mask"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Lingering Frost",
+        "description": "The longer the duration of Frost Vortex, the higher the Frost Vortex Final DMG, up to +60%",
+        "category": {
+            "id": 2,
+            "name": "Mask"
+        }
+    },
+    {
+        "id": 9,
+        "name": "Most Wanted",
+        "description": "Every time an enemy is marked, Attack +5% for 8s. Effect can stack up to 3 times",
+        "category": {
+            "id": 2,
+            "name": "Mask"
+        }
     }
 ]
