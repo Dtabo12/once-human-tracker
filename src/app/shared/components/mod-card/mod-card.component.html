@@ -1,9 +1,15 @@
-<mat-card appearance="outlined">
+<mat-card appearance="outlined" class="cursor-pointer">
     <mat-card-header>
         <mat-card-title>{{ mod().name }}</mat-card-title>
     </mat-card-header>
     <img mat-card-image [src]="'mr-wish.png' | imagePath" class="py-2 max-w-40 block mx-auto" />
-    <mat-card-content>
-        <span [matTooltip]="mod().description">{{ mod().description.substring(0, 50) }}...</span>
+    <mat-card-content [matTooltip]="mod().description">
+        <span>
+            {{ 
+                mod().description.length <= 20
+                ? mod().description
+                : mod().description.substring(0, 30) + '...' 
+            }}
+        </span>
     </mat-card-content>
 </mat-card>

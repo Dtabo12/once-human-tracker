@@ -1,14 +1,20 @@
 import { AsyncPipe, CommonModule, JsonPipe } from '@angular/common';
-import { Component, computed, inject, OnInit, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from "@angular/material/icon";
+import { MatInputModule } from '@angular/material/input';
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { Store } from '@ngrx/store';
+import { SharedModule } from '@shared/shared.module';
+import { map, Observable } from 'rxjs';
 import { modActions } from '../stores/mod.action';
 import { selectData } from '../stores/mod.reducer';
 import { ModCategories } from '../types/mods-categories.type';
-import { SharedModule } from '@shared/shared.module';
+import { Mod } from '../types/mods.type';
 
 const IMPORTS: CommonModule[] = [
   CommonModule,
@@ -16,6 +22,10 @@ const IMPORTS: CommonModule[] = [
   MatToolbarModule,
   MatIconModule,
   MatCheckboxModule,
+  MatButtonModule,
+  FormsModule,
+  MatFormFieldModule,
+  MatInputModule,
   SharedModule,
   AsyncPipe,
   JsonPipe
@@ -28,15 +38,17 @@ const IMPORTS: CommonModule[] = [
   templateUrl: './mods-tracker.component.html',
   styleUrl: './mods-tracker.component.scss'
 })
-export class ModsTrackerComponent implements OnInit {
+export class ModsTrackerComponent {
 
   store = inject(Store);
   mods = this.store.select(selectData);
+  filteredMods$: Observable<Mod[]>;
 
-  constructor() { }
+  value: string = '';
 
-  ngOnInit(): void {
+  constructor() {
     this.store.dispatch(modActions.loadMods());
+    this.filteredMods$ = this.mods;
   }
 
   readonly tasks = signal<ModCategories[]>([
@@ -94,5 +106,20 @@ export class ModsTrackerComponent implements OnInit {
     });
   }
 
+  onResetName(): void {
+    this.value = '';
+    this.filteredMods$ = this.mods;
+  }
 
+  onChangeName(name: string): void {
+    this.filteredMods$ = name.length <= 2
+      ? this.mods
+      : this.filteredMods$.pipe(
+        map((mods) => {
+          return mods.filter(
+            (mod) => mod.name.toLowerCase().includes(name.toLowerCase())
+          );
+        })
+      )
+  }
 }

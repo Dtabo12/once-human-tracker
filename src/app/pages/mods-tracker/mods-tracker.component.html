@@ -46,18 +46,30 @@
 
         <!-- Contenido Principal -->
         <mat-sidenav-content class="p-4 w-full md:w-[75%] overflow-hidden">
-            <mat-toolbar color="primary">
-                <button mat-icon-button (click)="sidenav.toggle()">
-                    <mat-icon>menu</mat-icon>
-                </button>
-                <span class="ml-4">Mods availables</span>
+            <mat-toolbar color="primary" class="justify-between">
+                <div>
+                    <button mat-icon-button (click)="sidenav.toggle()">
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                    <span class="ml-4">Mods availables</span>
+                </div>
+                <div>
+                    <mat-form-field class="w-64" appearance="fill">
+                        <mat-label>Mod name...</mat-label>
+                        <input matInput type="text" [(ngModel)]="value" (ngModelChange)="onChangeName($event)" />
+                        @if (value) {
+                        <button matSuffix mat-icon-button aria-label="Clear" (click)="onResetName()">
+                            <mat-icon>close</mat-icon>
+                        </button>
+                        }
+                    </mat-form-field>
+                </div>
             </mat-toolbar>
 
             <div class="p-4">
                 <ng-content>
-                    <!-- {{ mods | async | json }} -->
                     <div class="grid grid-cols-6 gap-4">
-                        @for (mod of (mods | async); track mod.id) {
+                        @for (mod of (filteredMods$ | async); track mod.id) {
                             <app-mod-card [mod]="mod" />
                         }
                     </div>
