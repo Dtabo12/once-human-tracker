@@ -2,7 +2,7 @@
     <mat-card-header>
         <mat-card-title>{{ mod().name }}</mat-card-title>
     </mat-card-header>
-    <img mat-card-image [src]="'mr-wish.png' | imagePath" class="py-2 max-w-40 block mx-auto" />
+    <img mat-card-image [src]="mod().src | imagePath" class="py-2 max-w-40 block mx-auto" />
     <mat-card-content [matTooltip]="mod().description">
         <span>
             {{ 

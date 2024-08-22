@@ -6,7 +6,8 @@
         "category": {
             "id": 1,
             "name": "Helmet"
-        }
+        },
+        "src": "armor-mods/helmet/deviation-expert.png"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "category": {
             "id": 1,
             "name": "Helmet"
-        }
+        },
+        "src": "armor-mods/helmet/elemental-havoc.png"
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "category": {
             "id": 1,
             "name": "Helmet"
-        }
+        },
+        "src": "armor-mods/helmet/fateful-strike.png"
     },
     {
         "id": 4,
@@ -33,7 +36,8 @@
         "category": {
             "id": 1,
             "name": "Helmet"
-        }
+        },
+        "src": "armor-mods/helmet/first-move-advantage.png"
     },
     {
         "id": 5,
@@ -42,7 +46,8 @@
         "category": {
             "id": 1,
             "name": "Helmet"
-        }
+        },
+        "src": "armor-mods/helmet/mag-expansion.png"
     },
     {
         "id": 6,
@@ -51,7 +56,8 @@
         "category": {
             "id": 1,
             "name": "Helmet"
-        }
+        },
+        "src": "armor-mods/helmet/momentum-up.png"
     },
     {
         "id": 7,
@@ -60,7 +66,8 @@
         "category": {
             "id": 1,
             "name": "Helmet"
-        }
+        },
+        "src": "armor-mods/helmet/precise-strike.png"
     },
     {
         "id": 8,
@@ -69,7 +76,8 @@
         "category": {
             "id": 1,
             "name": "Helmet"
-        }
+        },
+        "src": "armor-mods/helmet/work-of-proficiency.png"
     },
     {
         "id": 9,
@@ -78,7 +86,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/blaze-amplifier.png"
     },
     {
         "id": 10,
@@ -87,7 +96,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/blitzkrieg.png"
     },
     {
         "id": 11,
@@ -96,7 +106,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/break-bounce.png"
     },
     {
         "id": 12,
@@ -105,7 +116,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/delayed-blast.png"
     },
     {
         "id": 13,
@@ -114,7 +126,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/explosive-shrapnel.png"
     },
     {
         "id": 14,
@@ -123,7 +136,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/first-electrocution.png"
     },
     {
         "id": 15,
@@ -132,7 +146,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/gunslinger.png"
     },
     {
         "id": 16,
@@ -141,7 +156,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/light-cannon.png"
     },
     {
         "id": 17,
@@ -150,7 +166,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/lingering-frost.png"
     },
     {
         "id": 18,
@@ -159,7 +176,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/most-wanted.png"
     },
     {
         "id": 19,
@@ -168,7 +186,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/obliteration.png"
     },
     {
         "id": 20,
@@ -177,7 +196,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/point-detonation.png"
     },
     {
         "id": 21,
@@ -186,7 +206,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/precision-bounce.png"
     },
     {
         "id": 22,
@@ -195,7 +216,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/retrusion-explosion.png"
     },
     {
         "id": 23,
@@ -204,7 +226,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/shrapnel-carnage.png"
     },
     {
         "id": 24,
@@ -213,7 +236,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/targeted-strike.png"
     },
     {
         "id": 25,
@@ -222,7 +246,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/thunderclap.png"
     },
     {
         "id": 26,
@@ -231,7 +256,8 @@
         "category": {
             "id": 2,
             "name": "Mask"
-        }
+        },
+        "src": "armor-mods/mask/unbreakable.png"
     },
     {
         "id": 27,
@@ -240,7 +266,8 @@
         "category": {
             "id": 3,
             "name": "Top"
-        }
+        },
+        "src": "armor-mods/top/critical-rescue.png"
     },
     {
         "id": 28,
@@ -249,7 +276,8 @@
         "category": {
             "id": 3,
             "name": "Top"
-        }
+        },
+        "src": "armor-mods/top/enduring-shield.png"
     },
     {
         "id": 29,
@@ -258,7 +286,8 @@
         "category": {
             "id": 3,
             "name": "Top"
-        }
+        },
+        "src": "armor-mods/top/head-guard.png"
     },
     {
         "id": 30,
@@ -267,7 +296,8 @@
         "category": {
             "id": 3,
             "name": "Top"
-        }
+        },
+        "src": "armor-mods/top/head-on-conflict.png"
     },
     {
         "id": 31,
@@ -276,7 +306,8 @@
         "category": {
             "id": 3,
             "name": "Top"
-        }
+        },
+        "src": "armor-mods/top/healing-fortification.png"
     },
     {
         "id": 32,
@@ -285,7 +316,8 @@
         "category": {
             "id": 3,
             "name": "Top"
-        }
+        },
+        "src": "armor-mods/top/quick-comeback.png"
     },
     {
         "id": 33,
@@ -294,7 +326,8 @@
         "category": {
             "id": 3,
             "name": "Top"
-        }
+        },
+        "src": "armor-mods/top/rejuvenating.png"
     },
     {
         "id": 34,
@@ -303,7 +336,8 @@
         "category": {
             "id": 3,
             "name": "Top"
-        }
+        },
+        "src": "armor-mods/top/resist-advantage.png"
     },
     {
         "id": 35,
@@ -312,7 +346,8 @@
         "category": {
             "id": 3,
             "name": "Top"
-        }
+        },
+        "src": "armor-mods/top/status-immune.png"
     },
     {
         "id": 36,
@@ -321,7 +356,8 @@
         "category": {
             "id": 4,
             "name": "Gloves"
-        }
+        },
+        "src": "armor-mods/gloves/crit-amplifier.png"
     },
     {
         "id": 37,
@@ -330,7 +366,8 @@
         "category": {
             "id": 4,
             "name": "Gloves"
-        }
+        },
+        "src": "armor-mods/gloves/crit-boost.png"
     },
     {
         "id": 38,
@@ -339,7 +376,8 @@
         "category": {
             "id": 4,
             "name": "Gloves"
-        }
+        },
+        "src": "armor-mods/gloves/elemental-overload.png"
     },
     {
         "id": 39,
@@ -348,7 +386,8 @@
         "category": {
             "id": 4,
             "name": "Gloves"
-        }
+        },
+        "src": "armor-mods/gloves/melee-amplifier.png"
     },
     {
         "id": 40,
@@ -357,7 +396,8 @@
         "category": {
             "id": 4,
             "name": "Gloves"
-        }
+        },
+        "src": "armor-mods/gloves/munitions-amplifier.png"
     },
     {
         "id": 41,
@@ -366,7 +406,8 @@
         "category": {
             "id": 4,
             "name": "Gloves"
-        }
+        },
+        "src": "armor-mods/gloves/status-enhancement.png"
     },
     {
         "id": 42,
@@ -375,7 +416,8 @@
         "category": {
             "id": 4,
             "name": "Gloves"
-        }
+        },
+        "src": "armor-mods/gloves/weakspot-dmg-boost.png"
     },
     {
         "id": 43,
@@ -384,7 +426,8 @@
         "category": {
             "id": 5,
             "name": "Bottom"
-        }
+        },
+        "src": "armor-mods/bottom/bullet-siphon.png"
     },
     {
         "id": 44,
@@ -393,7 +436,8 @@
         "category": {
             "id": 5,
             "name": "Bottom"
-        }
+        },
+        "src": "armor-mods/bottom/deadshot.png"
     },
     {
         "id": 45,
@@ -402,7 +446,8 @@
         "category": {
             "id": 5,
             "name": "Bottom"
-        }
+        },
+        "src": "armor-mods/bottom/melee-momentum.png"
     },
     {
         "id": 46,
@@ -411,7 +456,8 @@
         "category": {
             "id": 5,
             "name": "Bottom"
-        }
+        },
+        "src": "armor-mods/bottom/precision-charge.png"
     },
     {
         "id": 47,
@@ -420,7 +466,8 @@
         "category": {
             "id": 5,
             "name": "Bottom"
-        }
+        },
+        "src": "armor-mods/bottom/reload-rampage.png"
     },
     {
         "id": 48,
@@ -429,7 +476,8 @@
         "category": {
             "id": 5,
             "name": "Bottom"
-        }
+        },
+        "src": "armor-mods/bottom/status-amplification.png"
     },
     {
         "id": 49,
@@ -438,7 +486,8 @@
         "category": {
             "id": 5,
             "name": "Bottom"
-        }
+        },
+        "src": "armor-mods/bottom/three-strikes.png"
     },
     {
         "id": 50,
@@ -447,7 +496,8 @@
         "category": {
             "id": 5,
             "name": "Bottom"
-        }
+        },
+        "src": "armor-mods/bottom/unstoppable.png"
     },
     {
         "id": 51,
@@ -456,7 +506,8 @@
         "category": {
             "id": 6,
             "name": "Shoes"
-        }
+        },
+        "src": "armor-mods/shoes/covered-advance.png"
     },
     {
         "id": 52,
@@ -465,7 +516,8 @@
         "category": {
             "id": 6,
             "name": "Shoes"
-        }
+        },
+        "src": "armor-mods/shoes/ferocious-charge.png"
     },
     {
         "id": 53,
@@ -474,7 +526,8 @@
         "category": {
             "id": 6,
             "name": "Shoes"
-        }
+        },
+        "src": "armor-mods/shoes/rush-hour.png"
     },
     {
         "id": 54,
@@ -483,7 +536,8 @@
         "category": {
             "id": 6,
             "name": "Shoes"
-        }
+        },
+        "src": "armor-mods/shoes/ruthless-reaper.png"
     },
     {
         "id": 55,
@@ -492,7 +546,8 @@
         "category": {
             "id": 6,
             "name": "Shoes"
-        }
+        },
+        "src": "armor-mods/shoes/secluded-strike.png"
     },
     {
         "id": 56,
@@ -501,6 +556,7 @@
         "category": {
             "id": 6,
             "name": "Shoes"
-        }
+        },
+        "src": "armor-mods/shoes/slow-and-steady.png"
     }
 ]
