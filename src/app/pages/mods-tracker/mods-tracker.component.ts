@@ -12,6 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SharedModule } from '@shared/shared.module';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 const COMMON_IMPORTS: CommonModule[] = [
   CommonModule,
@@ -19,6 +20,7 @@ const COMMON_IMPORTS: CommonModule[] = [
   MatCheckboxModule,
   MatInputModule,
   MatFormFieldModule,
+  MatTooltipModule,
   FormsModule,
   SharedModule
 ]
