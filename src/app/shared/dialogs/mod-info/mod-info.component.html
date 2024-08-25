@@ -1,0 +1,48 @@
+<h2 mat-dialog-title>{{ data.mod.name }}</h2>
+<mat-dialog-content class="flex flex-col">
+    <div class="flex flex-col md:flex-row gap-4 mb-2">
+        <div class="block mx-auto">
+            <img [src]="data.mod.src | imagePath" [alt]="data.mod.name" />
+        </div>
+
+        <div class="container flex">
+            <table mat-table [dataSource]="data.mod.dropLocation" class="w-max">
+
+                <ng-container matColumnDef="location">
+                    <th mat-header-cell *matHeaderCellDef>Location</th>
+                    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="enemyType">
+                    <th mat-header-cell *matHeaderCellDef>Enemy Type</th>
+                    <td mat-cell *matCellDef="let element">{{ element.enemyType }}</td>
+                </ng-container>
+
+                <ng-container matColumnDef="mode">
+                    <th mat-header-cell *matHeaderCellDef>Mode</th>
+                    <td mat-cell *matCellDef="let element">{{ renderMode(element.mode) }}</td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </div>
+    <div class="flex flex-col md:flex-row w-full gap-4">
+        <div class="container">
+            <h6>Description</h6>
+            <span>
+                {{ data.mod.description }}
+            </span>
+        </div>
+        <div class="container">
+            <h6>Mod Type</h6>
+            <span>
+                {{ data.mod.modType }}
+            </span>
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Got it</button>
+</mat-dialog-actions>

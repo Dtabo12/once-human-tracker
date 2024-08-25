@@ -1,98 +1,30 @@
-<nav class="bg-sky-950">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-            <!-- Mobile menu -->
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <!-- Mobile menu button-->
-                <button type="button"
-                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                    aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="absolute -inset-0.5"></span>
-                    <span class="sr-only">Open main menu</span>
-                    <!-- Icon when menu is closed. Menu open: "hidden", Menu closed: "block" -->
-                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                    <!-- Icon when menu is open. Menu open: "block", Menu closed: "hidden" -->
-                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+<header class="bg-sky-950 text-white flex items-center justify-between lg:justify-evenly p-4 relative">
+    <a routerLink="/mods" class="hidden md:block">Mods</a>
+    <button class="block md:hidden" (click)="toggleMenu()">
+        <img [src]="onceHumanLogo" alt="Logo" class="h-16 md:h-20 lg:h-24 mx-auto">
+    </button>
+    <a [href]="officialSiteUrl" target="_blank" class="hidden md:block">
+        <img [src]="onceHumanLogo" alt="Logo" class="h-16 md:h-20 lg:h-24 mx-auto">
+    </a>
+    <a [href]="interactiveMapUrl" target="_blank" class="hidden md:block">Interactive map</a>
+    @if (menuOpen) {
+    <div class="fixed inset-0 bg-gray-900 bg-opacity-75 z-50">
+        <div class="absolute top-0 left-0 w-64 bg-sky-950 h-full p-6 flex flex-col justify-between">
+            <div>
+                <button (click)="toggleMenu()" class="text-white text-right w-full">
+                    <mat-icon>clear</mat-icon>
                 </button>
+                <ul class="mt-8 space-y-4 text-lg">
+                    <li><a [href]="officialSiteUrl" target="_blank" class="block">Official site</a></li>
+                    <li><a routerLink="/mods" class="block">Mods</a></li>
+                    <li><a [href]="interactiveMapUrl" target="_blank" class="block">Interactive map</a></li>
+                </ul>
             </div>
-
-            <div class="flex flex-1 justify-center sm:items-center sm:justify-start">
-                <div class="flex flex-shrink-0 items-center">
-                    <img 
-                        class="h-10 w-auto" 
-                        src="https://www.oncehuman.game/pc/fab/20240706164218/img/logo_1098a5d6.png"
-                        alt="Once Human Traker"
-                    />
-                </div>
-                <div class="hidden sm:ml-6 sm:block">
-                    <div class="flex space-x-4 justify-center items-center">
-                        <button type="button" class="bg-sky-700 hover:bg-rose-800 px-2 py-1 rounded transition ease-in-out delay-150" mat-stroked-button (click)="onNavigate()">
-                            <span class="text-white">Mod Tracker</span>
-                        </button>
-                        <button type="button" class="bg-sky-700 hover:bg-rose-800 px-2 py-1 rounded transition ease-in-out delay-150" mat-stroked-button (click)="onNavigate('map')">
-                            <span class="text-white">Interactive Map</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <!-- Profile dropdown -->
-                <div class="relative ml-3">
-                    <div>
-                        <button 
-                            type="button"
-                            class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                            id="user-menu-button" 
-                            aria-expanded="false" 
-                            aria-haspopup="true"
-                            (click)="onDeployDropdown()"
-                        >
-                            <span class="absolute -inset-1.5"></span>
-                            <span class="sr-only">Open user menu</span>
-                            <img class="h-8 w-8 rounded-full"
-                                [src]="'mr-wish.png' | imagePath"
-                                alt="user-avatar"
-                            />
-                        </button>
-                    </div>
-                    @if (shouldRenderDropdown$ | async) {
-                        <div 
-                            class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                            role="menu" 
-                            aria-orientation="vertical" 
-                            aria-labelledby="user-menu-button" 
-                            tabindex="-1"
-                        >
-                            <!-- Active: "bg-gray-100", Not Active: "" -->
-                            <button type="button" class="block px-4 py-2 text-sm text-gray-700">
-                                <span>Your Profile</span>
-                            </button>
-                            <button type="button" class="block px-4 py-2 text-sm text-gray-700">
-                                <span>Sign out</span>
-                            </button>
-                        </div>
-                    }
-                </div>
+            <div class="text-center">
+                <p>Dtabo</p>
+                <p>&copy; {{ currentYear }}</p>
             </div>
         </div>
     </div>
-
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
-                aria-current="page">Mod Tracker</a>
-            <a href="https://oncehuman.th.gl/"
-                class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Interactive Map</a>
-        </div>
-    </div>
-</nav>
+    }
+</header>

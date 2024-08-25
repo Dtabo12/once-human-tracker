@@ -24,10 +24,13 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets/data/mods.json",
+              "src/assets"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/cyan-orange.css",
+              "src/assets/styles/colors.scss",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -88,11 +91,13 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets/data/mods.json",
+              "src/assets"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/cyan-orange.css",
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
