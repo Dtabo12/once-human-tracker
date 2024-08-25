@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --base-href=https://dtabo12.github.io/once-human-tracker/ --name='Dtabo12' --email=dtabodevsoft@gmail.com --repo=https://github.com/Dtabo12/once-human-tracker.git"
   },
   "private": true,
   "dependencies": {
