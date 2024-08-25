@@ -38,8 +38,9 @@ export class ModsTrackerComponent {
   mods = this.store.select(selectData);
   filteredMods$: Observable<Mod[]>;
 
-  searchOpen = false;
-  filterOpen = false;
+  searchOpen: boolean = false;
+  filterOpen: boolean = false;
+  filterIsReady: boolean = false;
   sectionTitle: string = 'Available mods';
   currentYear: number = new Date().getFullYear();
   filterValue: string = '';

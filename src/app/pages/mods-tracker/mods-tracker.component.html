@@ -14,9 +14,11 @@
                     (ngModelChange)="onChangeName($event)" 
                 />
             }
-            <button mat-icon-button matTooltip="coming..." matTooltipPosition="above">
-                <mat-icon>filter_list</mat-icon>
-            </button>
+            @if (filterIsReady) {
+                <button mat-icon-button matTooltip="coming..." matTooltipPosition="above" (click)="toggleFilter()">
+                    <mat-icon>filter_list</mat-icon>
+                </button>
+            }
         </div>
     </div>
 

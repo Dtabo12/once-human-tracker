@@ -4,615 +4,2058 @@
         "name": "Deviation Expert",
         "description": "Range -25%, Fire Rate +10%, Status DMG +20%",
         "type": "armor-mods",
+        "modType": "Fire rate, Status DMG",
         "category": {
             "id": 1,
             "name": "Helmet"
         },
-        "src": "armor-mods/helmet/deviation-expert.png"
+        "src": "armor-mods/helmet/deviation-expert.png",
+        "dropLocation": [
+            {
+                "name": "Silo ALPHA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 2,
         "name": "Elemental Havoc",
         "description": "Elemental DMG +10%. When HP is above 90%, 10% additionally",
         "type": "armor-mods",
+        "modType": "Conditional, Elemental DMG",
         "category": {
             "id": 1,
             "name": "Helmet"
         },
-        "src": "armor-mods/helmet/elemental-havoc.png"
+        "src": "armor-mods/helmet/elemental-havoc.png",
+        "dropLocation": [
+            {
+                "name": "Silo ALPHA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 3,
         "name": "Fateful Strike",
         "description": "Cannot deal Weakspot DMG. Crit rate +10% and Crit DMG +30%",
         "type": "armor-mods",
+        "modType": "Crit rate",
         "category": {
             "id": 1,
             "name": "Helmet"
         },
-        "src": "armor-mods/helmet/fateful-strike.png"
+        "src": "armor-mods/helmet/fateful-strike.png",
+        "dropLocation": [
+            {
+                "name": "Silo ALPHA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 4,
         "name": "First Move Advantage",
         "description": "After reloading, Crit Rate +10%, Crit DMG +20% for 2s",
         "type": "armor-mods",
+        "modType": "Conditional, Crit rate, Crit DMG",
         "category": {
             "id": 1,
             "name": "Helmet"
         },
-        "src": "armor-mods/helmet/first-move-advantage.png"
+        "src": "armor-mods/helmet/first-move-advantage.png",
+        "dropLocation": [
+            {
+                "name": "Silo ALPHA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 5,
         "name": "Mag Expansion",
         "description": "When the magazine is empty, Magazine Capacity +30%",
         "type": "armor-mods",
+        "modType": "Magazine Capacity",
         "category": {
             "id": 1,
             "name": "Helmet"
         },
-        "src": "armor-mods/helmet/mag-expansion.png"
+        "src": "armor-mods/helmet/mag-expansion.png",
+        "dropLocation": [
+            {
+                "name": "Silo ALPHA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 6,
         "name": "Momentum Up",
         "description": "Fire Rate +10% for the first 50% of the magazine and Weapon DMG +30% for the next 50% of the magazine",
         "type": "armor-mods",
+        "modType": "Fire rate, Weapon DMG",
         "category": {
             "id": 1,
             "name": "Helmet"
         },
-        "src": "armor-mods/helmet/momentum-up.png"
+        "src": "armor-mods/helmet/momentum-up.png",
+        "dropLocation": [
+            {
+                "name": "Silo ALPHA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 7,
         "name": "Precise Strike",
         "description": "Hitting Weakspot grants +12.0% Weakspot DMG for 3 seconds, up to 3 stacks",
         "type": "armor-mods",
+        "modType": "Weakspot DMG",
         "category": {
             "id": 1,
             "name": "Helmet"
         },
-        "src": "armor-mods/helmet/precise-strike.png"
+        "src": "armor-mods/helmet/precise-strike.png",
+        "dropLocation": [
+            {
+                "name": "Silo ALPHA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 8,
         "name": "Work of Proficiency",
         "description": "Reloading an empty mag grants +10% Reload Speed and +15.0% Status DMG, lasting until the next reload",
         "type": "armor-mods",
+        "modType": "Status DMG",
         "category": {
             "id": 1,
             "name": "Helmet"
         },
-        "src": "armor-mods/helmet/work-of-proficiency.png"
+        "src": "armor-mods/helmet/work-of-proficiency.png",
+        "dropLocation": [
+            {
+                "name": "Silo ALPHA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 9,
         "name": "Blaze Amplifier",
         "description": "Every stack of Burn grants +3% Psi Intensity DMG",
         "type": "armor-mods",
+        "modType": "Burn",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/blaze-amplifier.png"
+        "src": "armor-mods/mask/blaze-amplifier.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 10,
         "name": "Blitzkrieg",
         "description": "Fast Gunner stacks +5 and additional Fire Rate +1% fir each stack",
         "type": "armor-mods",
+        "modType": "Fast Gunner",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/blitzkrieg.png"
+        "src": "armor-mods/mask/blitzkrieg.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 11,
         "name": "Break Bounce",
         "description": "When a bullet hits an enemy with HP above 50% the bullet's Ultimate DMG +50%",
         "type": "armor-mods",
+        "modType": "Bounce",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/break-bounce.png"
+        "src": "armor-mods/mask/break-bounce.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 12,
         "name": "Delayed Blast",
         "description": "Vefore the bomb explodes, for every 5 hits taken, the bomb's Ultimate DMG +12%",
         "type": "armor-mods",
+        "modType": "Unstable Bomber",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/delayed-blast.png"
+        "src": "armor-mods/mask/delayed-blast.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 13,
         "name": "Explosive Shrapnel",
         "description": "The 20th Shrapnel is explosive and deals +300% DMG with guaranteed critical hit",
         "type": "armor-mods",
+        "modType": "Shrapnel",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/explosive-shrapnel.png"
+        "src": "armor-mods/mask/explosive-shrapnel.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 14,
         "name": "First Electrocution",
         "description": "For enemies without Power Surge status, Power Surge's Ultimate DMG +30%",
         "type": "armor-mods",
+        "modType": "Power Surge",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/first-electrocution.png"
+        "src": "armor-mods/mask/first-electrocution.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 15,
         "name": "Gunslinger",
         "description": "When in Fast Gunner status, Weakspot DMG +30%",
         "type": "armor-mods",
+        "modType": "Fast Gunner",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/gunslinger.png"
+        "src": "armor-mods/mask/gunslinger.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 16,
         "name": "Light Cannon",
         "description": "No Super Armor inside Fortress Warfare while in Fortress Warfare state, Attack +12%",
         "type": "armor-mods",
+        "modType": "Fortress Warfare",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/light-cannon.png"
+        "src": "armor-mods/mask/light-cannon.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 17,
         "name": "Lingering Frost",
         "description": "The longer the duration of Frost Vortex, the higher the Frost Vortex Final DMG, up to +60%",
         "type": "armor-mods",
+        "modType": "Frost Vortex",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/lingering-frost.png"
+        "src": "armor-mods/mask/lingering-frost.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 18,
         "name": "Most Wanted",
         "description": "Every time an enemy is marked, Attack +5% for 8s. Effect can stack up to 3 times",
         "type": "armor-mods",
+        "modType": "The Bull's Eye",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/most-wanted.png"
+        "src": "armor-mods/mask/most-wanted.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 19,
         "name": "Obliteration",
         "description": "The more enemies inside Frost Vortex, the higher the Ultimate DMG of Frost Vortex, up to 60%",
         "type": "armor-mods",
+        "modType": "Frost Vortex",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/obliteration.png"
+        "src": "armor-mods/mask/obliteration.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 20,
         "name": "Point Detonation",
         "description": "When Unestable Bomber hits only one enemy, Unstable Bomber Final DMG +25%",
         "type": "armor-mods",
+        "modType": "Unstable Bomber",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/point-detonation.png"
+        "src": "armor-mods/mask/point-detonation.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 21,
         "name": "Precision Bounce",
         "description": "The 6th Bounce is Precision Bounce and deals +100% DMG with guaranteed critial hit",
         "type": "armor-mods",
+        "modType": "Bounce",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/precision-bounce.png"
+        "src": "armor-mods/mask/precision-bounce.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 22,
         "name": "Retrusion Explosion",
         "description": "Crit DMG +40% for enemies with Burn",
         "type": "armor-mods",
+        "modType": "Power Surge",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/retrusion-explosion.png"
+        "src": "armor-mods/mask/retrusion-explosion.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 23,
         "name": "Shrapnel Carnage",
         "description": "The chance of Shrapnel hitting Weakspots is increased by 100.0%, with Weakspot DMG +25.0%",
         "type": "armor-mods",
+        "modType": "Shrapnel",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/shrapnel-carnage.png"
+        "src": "armor-mods/mask/shrapnel-carnage.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 24,
         "name": "Targeted Strike",
         "description": "When hitting marked enemies, Crit Rate +10%, and Crit DMG 25%",
         "type": "armor-mods",
+        "modType": "The Bull's Eye",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/targeted-strike.png"
+        "src": "armor-mods/mask/targeted-strike.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 25,
         "name": "Thunderclap",
         "description": "After triggering Power Surge 20 times, the next hit summons Celestial Thunder (Shock DMG od 200% PSI Intensity)",
         "type": "armor-mods",
+        "modType": "Power Surge",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/thunderclap.png"
+        "src": "armor-mods/mask/thunderclap.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 26,
         "name": "Unbreakable",
         "description": "Fortress Warfare range -30%. While in Fortress Warfare state, Attack +15%",
         "type": "armor-mods",
+        "modType": "Fortress Warfare",
         "category": {
             "id": 2,
             "name": "Mask"
         },
-        "src": "armor-mods/mask/unbreakable.png"
+        "src": "armor-mods/mask/unbreakable.png",
+        "dropLocation": [
+            {
+                "name": "Silo EX1",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 27,
         "name": "Critical Rescue",
         "description": "DMG Reduction 20% and Healing Received +20% when HP is below 30%",
         "type": "armor-mods",
+        "modType": "Defense",
         "category": {
             "id": 3,
             "name": "Top"
         },
-        "src": "armor-mods/top/critical-rescue.png"
+        "src": "armor-mods/top/critical-rescue.png",
+        "dropLocation": [
+            {
+                "name": "Silo THETA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 28,
         "name": "Enduring Shield",
         "description": "When out of combat, gain 1 stack of Safe Heaven ever 5s. Effect can stack up to 5 times. With every 5 damage received, remove 1 stack of Safe Heaven to get 8% shield for 3s",
         "type": "armor-mods",
+        "modType": "Defense",
         "category": {
             "id": 3,
             "name": "Top"
         },
-        "src": "armor-mods/top/enduring-shield.png"
+        "src": "armor-mods/top/enduring-shield.png",
+        "dropLocation": [
+            {
+                "name": "Silo THETA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 29,
         "name": "Head Guard",
         "description": "When HP is above 70%, the head area is no longer a weakspot",
         "type": "armor-mods",
+        "modType": "Defense",
         "category": {
             "id": 3,
             "name": "Top"
         },
-        "src": "armor-mods/top/head-guard.png"
+        "src": "armor-mods/top/head-guard.png",
+        "dropLocation": [
+            {
+                "name": "Silo THETA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 30,
         "name": "Head-on Conflict",
         "description": "Having enemies within 7 metes around you grants a 10% DMG Reduction. Taking melee DMG from enemies grants an extra 10.0% DMG Reduction for 5 seconds",
         "type": "armor-mods",
+        "modType": "DMG Reduce",
         "category": {
             "id": 3,
             "name": "Top"
         },
-        "src": "armor-mods/top/head-on-conflict.png"
+        "src": "armor-mods/top/head-on-conflict.png",
+        "dropLocation": [
+            {
+                "name": "Silo THETA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 31,
         "name": "Healing Fortification",
         "description": "When using a healing shot, DMG Reduction 40% for 2s",
         "type": "armor-mods",
+        "modType": "Defense",
         "category": {
             "id": 3,
             "name": "Top"
         },
-        "src": "armor-mods/top/healing-fortification.png"
+        "src": "armor-mods/top/healing-fortification.png",
+        "dropLocation": [
+            {
+                "name": "Silo THETA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 32,
         "name": "Quick Comeback",
         "description": "When using a healing shot, Movement Speed +20% for 2s and refill the magazine from the inventory up to 100%",
         "type": "armor-mods",
+        "modType": "Defense",
         "category": {
             "id": 3,
             "name": "Top"
         },
-        "src": "armor-mods/top/quick-comeback.png"
+        "src": "armor-mods/top/quick-comeback.png",
+        "dropLocation": [
+            {
+                "name": "Silo THETA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 33,
         "name": "Rejuvenating",
         "description": "When HP is above 60%, a kill recovers 15% lost HP",
         "type": "armor-mods",
+        "modType": "Conditional",
         "category": {
             "id": 3,
             "name": "Top"
         },
-        "src": "armor-mods/top/rejuvenating.png"
+        "src": "armor-mods/top/rejuvenating.png",
+        "dropLocation": [
+            {
+                "name": "Silo THETA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 34,
         "name": "Resist Advantage",
         "description": "When out of combat, gain 1 stack of DMG Reduction 5% every 10s. Effect can stack up to 5 times. 1 stack is removed when hit",
         "type": "armor-mods",
+        "modType": "Defense",
         "category": {
             "id": 3,
             "name": "Top"
         },
-        "src": "armor-mods/top/resist-advantage.png"
+        "src": "armor-mods/top/resist-advantage.png",
+        "dropLocation": [
+            {
+                "name": "Silo THETA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 35,
         "name": "Status Immune",
         "description": "When HP is lower than 60%, purge all Deviated State (cooldown: 15s)",
         "type": "armor-mods",
+        "modType": "Defense",
         "category": {
             "id": 3,
             "name": "Top"
         },
-        "src": "armor-mods/top/status-immune.png"
+        "src": "armor-mods/top/status-immune.png",
+        "dropLocation": [
+            {
+                "name": "Silo THETA",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 36,
         "name": "Crit Amplifier",
         "description": "Crit Rate +10%, Crit DMG +15%",
         "type": "armor-mods",
+        "modType": "Crit rate, Crit DMG",
         "category": {
             "id": 4,
             "name": "Gloves"
         },
-        "src": "armor-mods/gloves/crit-amplifier.png"
+        "src": "armor-mods/gloves/crit-amplifier.png",
+        "dropLocation": [
+            {
+                "name": "Silo SIGMA",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 37,
         "name": "Crit Boost",
         "description": "Crit Rate +15.0%",
         "type": "armor-mods",
+        "modType": "Status DMG",
         "category": {
             "id": 4,
             "name": "Gloves"
         },
-        "src": "armor-mods/gloves/crit-boost.png"
+        "src": "armor-mods/gloves/crit-boost.png",
+        "dropLocation": [
+            {
+                "name": "Silo SIGMA",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 38,
         "name": "Elemental Overload",
         "description": "Element DMG (Blaze, Frost, Shock, Blast) +18%",
         "type": "armor-mods",
+        "modType": "Elemental DMG",
         "category": {
             "id": 4,
             "name": "Gloves"
         },
-        "src": "armor-mods/gloves/elemental-overload.png"
+        "src": "armor-mods/gloves/elemental-overload.png",
+        "dropLocation": [
+            {
+                "name": "Silo SIGMA",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 39,
         "name": "Melee Amplifier",
         "description": "Melee DMG +20.0%",
         "type": "armor-mods",
+        "modType": "Melee DMG",
         "category": {
             "id": 4,
             "name": "Gloves"
         },
-        "src": "armor-mods/gloves/melee-amplifier.png"
+        "src": "armor-mods/gloves/melee-amplifier.png",
+        "dropLocation": [
+            {
+                "name": "Silo SIGMA",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 40,
         "name": "Munitions Amplifier",
         "description": "Weapon DMG +15.0%",
         "type": "armor-mods",
+        "modType": "Weapon DMG",
         "category": {
             "id": 4,
             "name": "Gloves"
         },
-        "src": "armor-mods/gloves/munitions-amplifier.png"
+        "src": "armor-mods/gloves/munitions-amplifier.png",
+        "dropLocation": [
+            {
+                "name": "Silo SIGMA",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 41,
         "name": "Status Enhancement",
         "description": "Status DMG +20.0%",
         "type": "armor-mods",
+        "modType": "Status DMG",
         "category": {
             "id": 4,
             "name": "Gloves"
         },
-        "src": "armor-mods/gloves/status-enhancement.png"
+        "src": "armor-mods/gloves/status-enhancement.png",
+        "dropLocation": [
+            {
+                "name": "Silo SIGMA",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 42,
         "name": "Weakspot DMG Boost",
         "description": "Weakspot DMG Boost +25%",
         "type": "armor-mods",
+        "modType": "Weakspot DMG",
         "category": {
             "id": 4,
             "name": "Gloves"
         },
-        "src": "armor-mods/gloves/weakspot-dmg-boost.png"
+        "src": "armor-mods/gloves/weakspot-dmg-boost.png",
+        "dropLocation": [
+            {
+                "name": "Silo SIGMA",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 43,
         "name": "Bullet Siphon",
         "description": "Weapon DMG +5%. Every 5 bullets consumed in the magazine grants +4% Weapon DMG, capped at 20%",
         "type": "armor-mods",
+        "modType": "Weapon DMG",
         "category": {
             "id": 5,
             "name": "Bottom"
         },
-        "src": "armor-mods/bottom/bullet-siphon.png"
+        "src": "armor-mods/bottom/bullet-siphon.png",
+        "dropLocation": [
+            {
+                "name": "Silo PSI",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 44,
         "name": "Deadshot",
         "description": "Each Crit Hit by non-melee weapons grants +5% Crit DMG, up to 45%. The effect is removed upon the next reload",
         "type": "armor-mods",
+        "modType": "Crit DMG",
         "category": {
             "id": 5,
             "name": "Bottom"
         },
-        "src": "armor-mods/bottom/deadshot.png"
+        "src": "armor-mods/bottom/deadshot.png",
+        "dropLocation": [
+            {
+                "name": "Silo PSI",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 45,
         "name": "Melee Momentum",
         "description": "Killing with melee attacks restores 30.0% of Max Stamina and grants +20.0% Melee DMG for 8 seconds",
         "type": "armor-mods",
+        "modType": "Conditional, Melee DMG",
         "category": {
             "id": 5,
             "name": "Bottom"
         },
-        "src": "armor-mods/bottom/melee-momentum.png"
+        "src": "armor-mods/bottom/melee-momentum.png",
+        "dropLocation": [
+            {
+                "name": "Silo PSI",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 46,
         "name": "Precision Charge",
         "description": "For every 10% Weakspot hit rate of the previous magazine, Elemental DMG +4%, up to 24%, lasting for 10s. Reloading resets the calculation",
         "type": "armor-mods",
+        "modType": "Conditional, Elemental DMG",
         "category": {
             "id": 5,
             "name": "Bottom"
         },
-        "src": "armor-mods/bottom/precision-charge.png"
+        "src": "armor-mods/bottom/precision-charge.png",
+        "dropLocation": [
+            {
+                "name": "Silo PSI",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 47,
         "name": "Reload Rampage",
         "description": "Killing 2 enemies refills 2 bullets from inventory (no more than half of the mag), and grants +10.0% Weapon and Status DMG, lasting until the next reload",
         "type": "armor-mods",
+        "modType": "Conditional",
         "category": {
             "id": 5,
             "name": "Bottom"
         },
-        "src": "armor-mods/bottom/reload-rampage.png"
+        "src": "armor-mods/bottom/reload-rampage.png",
+        "dropLocation": [
+            {
+                "name": "Silo PSI",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 48,
         "name": "Status Amplification",
         "description": "When the magazine is empty, Status DMG +10% for 12s (up to 3 stacks)",
         "type": "armor-mods",
+        "modType": "Status DMG",
         "category": {
             "id": 5,
             "name": "Bottom"
         },
-        "src": "armor-mods/bottom/status-amplification.png"
+        "src": "armor-mods/bottom/status-amplification.png",
+        "dropLocation": [
+            {
+                "name": "Silo PSI",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 49,
         "name": "Three Strikes",
         "description": "For the first three hits aftes reloading (not exceeding 50% of magazine capacity), Weakspot DMG +30%",
         "type": "armor-mods",
+        "modType": "Conditional, Weakspot DMG",
         "category": {
             "id": 5,
             "name": "Bottom"
         },
-        "src": "armor-mods/bottom/three-strikes.png"
+        "src": "armor-mods/bottom/three-strikes.png",
+        "dropLocation": [
+            {
+                "name": "Silo PSI",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 50,
         "name": "Unstoppable",
         "description": "Weakspot DMG +10% when a bullet hits a target more than 20m away. For every additional 1 meters away from the target, Weakspot DMG +1% up to 20%",
         "type": "armor-mods",
+        "modType": "Conditional, Weakspot DMG",
         "category": {
             "id": 5,
             "name": "Bottom"
         },
-        "src": "armor-mods/bottom/unstoppable.png"
+        "src": "armor-mods/bottom/unstoppable.png",
+        "dropLocation": [
+            {
+                "name": "Silo PSI",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Rosetta"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 51,
         "name": "Covered Advance",
         "description": "Taking no DMG within 4s grants +20% Melee, Weapon, and Status DMG for 30 seconds. The effect resets when the duration ends",
         "type": "armor-mods",
+        "modType": "Conditional, Weapon DMG, Status DMG",
         "category": {
             "id": 6,
             "name": "Shoes"
         },
-        "src": "armor-mods/shoes/covered-advance.png"
+        "src": "armor-mods/shoes/covered-advance.png",
+        "dropLocation": [
+            {
+                "name": "Silo PHI",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 52,
         "name": "Ferocious Charge",
         "description": "Killing enemies within 10 meters grants Melee, Weapon DMG, Status DMG +20% for 8s",
         "type": "armor-mods",
+        "modType": "General DMG",
         "category": {
             "id": 6,
             "name": "Shoes"
         },
-        "src": "armor-mods/shoes/ferocious-charge.png"
+        "src": "armor-mods/shoes/ferocious-charge.png",
+        "dropLocation": [
+            {
+                "name": "Silo PHI",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 53,
         "name": "Rush Hour",
         "description": "Every 10% HP loss grants +4% Melee, Weapon, and Status DMG",
         "type": "armor-mods",
+        "modType": "Conditional, Weapon DMG, Status DMG",
         "category": {
             "id": 6,
             "name": "Shoes"
         },
-        "src": "armor-mods/shoes/rush-hour.png"
+        "src": "armor-mods/shoes/rush-hour.png",
+        "dropLocation": [
+            {
+                "name": "Silo PHI",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 54,
         "name": "Ruthless Reaper",
         "description": "After accumulating 2 kill(s), refill the 100% of your magazine from your reserves",
         "type": "armor-mods",
+        "modType": "Conditional, Refill Ammo",
         "category": {
             "id": 6,
             "name": "Shoes"
         },
-        "src": "armor-mods/shoes/ruthless-reaper.png"
+        "src": "armor-mods/shoes/ruthless-reaper.png",
+        "dropLocation": [
+            {
+                "name": "Silo PHI",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 55,
         "name": "Secluded Strike",
         "description": "Having no enemies within 7 metes around you grants +15% Weapon and Status DMG",
         "type": "armor-mods",
+        "modType": "Conditional, Weapon DMG, Status DMG",
         "category": {
             "id": 6,
             "name": "Shoes"
         },
-        "src": "armor-mods/shoes/secluded-strike.png"
+        "src": "armor-mods/shoes/secluded-strike.png",
+        "dropLocation": [
+            {
+                "name": "Silo PHI",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     },
     {
         "id": 56,
         "name": "Slow and Steady",
         "description": "+10% Melee, Weapon, Status DMG. When HP is above 90%, DMG +10%",
         "type": "armor-mods",
+        "modType": "Conditional, Weapon DMG, Status DMG",
         "category": {
             "id": 6,
             "name": "Shoes"
         },
-        "src": "armor-mods/shoes/slow-and-steady.png"
+        "src": "armor-mods/shoes/slow-and-steady.png",
+        "dropLocation": [
+            {
+                "name": "Silo PHI",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Deviants"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     }
 ]

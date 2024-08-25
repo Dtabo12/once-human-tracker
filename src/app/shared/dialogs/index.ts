@@ -1,0 +1,1 @@
+export * from './mod-info/mod-info.component';
