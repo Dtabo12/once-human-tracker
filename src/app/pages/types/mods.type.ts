@@ -4,6 +4,7 @@ export type Mod = {
   id: number,
   name: string,
   description: string,
+  type: string,
   category: BaseType,
   src: string,
   suffix?: BaseType,

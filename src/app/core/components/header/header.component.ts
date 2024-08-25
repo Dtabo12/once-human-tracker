@@ -1,11 +1,13 @@
 import { AsyncPipe, CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
 import { ImagePathPipe } from '@shared/pipes';
 import { Observable, of } from 'rxjs';
 
 const IMPORTS: CommonModule[] = [
   RouterLink,
+  MatIconModule,
   AsyncPipe,
   ImagePathPipe
 ];
@@ -19,11 +21,14 @@ const IMPORTS: CommonModule[] = [
 })
 export class HeaderComponent {
 
-  shouldRenderDropdown$: Observable<boolean> = new Observable<boolean>();
-
   interactiveMapUrl: string = 'https://oncehuman.th.gl/';
+  officialSiteUrl: string = 'https://www.oncehuman.game/';
+  onceHumanLogo: string = 'https://www.oncehuman.game/pc/fab/20240706164218/img/logo_1098a5d6.png';
 
-  onDeployDropdown(): void {
-    this.shouldRenderDropdown$ = of(true);
+  menuOpen: boolean = false;
+  currentYear: number = new Date().getFullYear();
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
   }
 }

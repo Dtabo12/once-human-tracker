@@ -1,40 +1,32 @@
-import { AsyncPipe, CommonModule, JsonPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component, computed, inject, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatIconModule } from "@angular/material/icon";
-import { MatInputModule } from '@angular/material/input';
-import { MatSidenavModule } from "@angular/material/sidenav";
-import { MatToolbarModule } from "@angular/material/toolbar";
 import { Store } from '@ngrx/store';
-import { SharedModule } from '@shared/shared.module';
 import { map, Observable } from 'rxjs';
 import { modActions } from '../stores/mod.action';
 import { selectData } from '../stores/mod.reducer';
 import { ModCategories } from '../types/mods-categories.type';
 import { Mod } from '../types/mods.type';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { SharedModule } from '@shared/shared.module';
 
-const IMPORTS: CommonModule[] = [
+const COMMON_IMPORTS: CommonModule[] = [
   CommonModule,
-  MatSidenavModule,
-  MatToolbarModule,
   MatIconModule,
   MatCheckboxModule,
-  MatButtonModule,
-  FormsModule,
-  MatFormFieldModule,
   MatInputModule,
-  SharedModule,
-  AsyncPipe,
-  JsonPipe
-];
+  MatFormFieldModule,
+  FormsModule,
+  SharedModule
+]
 
 @Component({
   selector: 'app-mods-tracker',
   standalone: true,
-  imports: [IMPORTS],
+  imports: [COMMON_IMPORTS],
   templateUrl: './mods-tracker.component.html',
   styleUrl: './mods-tracker.component.scss'
 })
@@ -44,19 +36,26 @@ export class ModsTrackerComponent {
   mods = this.store.select(selectData);
   filteredMods$: Observable<Mod[]>;
 
-  value: string = '';
+  searchOpen = false;
+  filterOpen = false;
+  sectionTitle: string = 'Available mods';
+  currentYear: number = new Date().getFullYear();
+  filterValue: string = '';
+
+  // Lista de categorías seleccionadas
+  selectedCategories = signal<ModCategories[]>([]);
 
   constructor() {
     this.store.dispatch(modActions.loadMods());
     this.filteredMods$ = this.mods;
   }
 
-  readonly tasks = signal<ModCategories[]>([
+  readonly availableMods = signal<ModCategories[]>([
     {
       id: 1,
       name: 'Armor mods',
       completed: false,
-      subtasks: [
+      subCategories: [
         { id: 1, name: 'Helmet', completed: false },
         { id: 2, name: 'Mask', completed: false },
         { id: 3, name: 'Top', completed: false },
@@ -69,7 +68,7 @@ export class ModsTrackerComponent {
       id: 2,
       name: 'Weapon mods',
       completed: false,
-      subtasks: [
+      subCategories: [
         { id: 1, name: 'Bomber', completed: false },
         { id: 2, name: 'Bounce', completed: false },
         { id: 3, name: 'Burn', completed: false },
@@ -84,30 +83,71 @@ export class ModsTrackerComponent {
   ]);
 
   readonly partiallyComplete = computed(() => {
-    return this.tasks().map(task => {
-      if (!task.subtasks) {
+    return this.availableMods().map(mods => {
+      if (!mods.subCategories) {
         return false;
       }
-      return task.subtasks.some(t => t.completed) && !task.subtasks.every(t => t.completed);
+      return mods.subCategories.some(sc => sc.completed) && !mods.subCategories.every(sc => sc.completed);
     });
   });
 
-  update(taskIndex: number, completed: boolean, subtaskIndex?: number) {
-    this.tasks.update(tasks => {
-      const task = tasks[taskIndex];
-      if (subtaskIndex === undefined) {
-        task.completed = completed;
-        task.subtasks?.forEach(t => (t.completed = completed));
+  update(categoryIndex: number, completed: boolean, subcategoryIndex?: number) {
+    this.availableMods.update(mods => {
+      const mod = mods[categoryIndex];
+
+      if (subcategoryIndex === undefined) {
+        mod.completed = completed;
+        mod.subCategories?.forEach(t => (t.completed = completed));
+
+        this.updateSelectedCategories(mod, completed);
       } else {
-        task.subtasks![subtaskIndex].completed = completed;
-        task.completed = task.subtasks?.every(t => t.completed) ?? true;
+        const submod = mod.subCategories![subcategoryIndex];
+        submod.completed = completed;
+        
+        if (mod.subCategories?.every(t => t.completed)) {
+          console.log('👀if');
+          mod.completed = true;
+          
+          this.updateSelectedCategories(mod, true);
+        } else {
+          console.log('👀else');
+          mod.completed = false;
+
+          this.updateSelectedCategories(mod, false);
+        }
       }
-      return [...tasks];
+
+      return [...mods];
     });
   }
 
+  private updateSelectedCategories(mod: ModCategories, completed: boolean) {
+    const selectedMods = this.selectedCategories();
+  
+    if (completed) {
+      if (!selectedMods.includes(mod)) {
+        this.selectedCategories.set([...selectedMods, mod]);
+      }
+    } else {
+      this.selectedCategories.set(selectedMods.filter(m => m !== mod));
+    }
+
+    // this.filterMods();
+  }
+
+  filterMods() {
+    const selectedMods = this.selectedCategories();
+    console.log('🚩selectedMods', selectedMods);
+
+    //1. Cuando se selecciona toda la categoría
+    selectedMods.filter
+
+    //2. Cuando se seleccionan una o más subcategorías
+    
+  }
+
   onResetName(): void {
-    this.value = '';
+    this.filterValue = '';
     this.filteredMods$ = this.mods;
   }
 
@@ -121,5 +161,14 @@ export class ModsTrackerComponent {
           );
         })
       )
+  }
+
+  toggleSearch() {
+    this.filterValue = '';
+    this.searchOpen = !this.searchOpen;
+  }
+
+  toggleFilter() {
+    this.filterOpen = !this.filterOpen;
   }
 }

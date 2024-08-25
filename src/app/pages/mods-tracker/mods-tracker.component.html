@@ -1,80 +1,79 @@
-<div class="container-xl mx-auto">
-    <mat-sidenav-container class="h-[95vh]">
-        <!-- Menú Lateral -->
-        <mat-sidenav 
-            #sidenav 
-            class="bg-gray-800 text-white w-[25%]" 
-            mode="side" 
-            [opened]="true"
-            [fixedInViewport]="true" 
-            fixedTopGap="70"
-            >
-            <div class="p-4">
-                <h2 class="text-xl font-bold">Categories</h2>
-                @for (category of tasks(); track category; let i = $index) {
-                    <div class="my-3 mx-0">
-                        <span>
-                            <mat-checkbox 
-                                [checked]="category.completed" 
-                                [indeterminate]="partiallyComplete()[i]"
-                                (change)="update(i, $event.checked!)"
-                                >
-                                {{ category.name }}
-                            </mat-checkbox>
-                        </span>
-                        
-                        @if (category.subtasks?.length) {
-                            <div class="ml-4">
-                                <ul class="mt-1">
-                                    @for (subcategory of category.subtasks; track subcategory; let j = $index) {
-                                        <li class="mx-3">
-                                            <mat-checkbox 
-                                                [checked]="subcategory.completed" 
-                                                (change)="update(i, $event.checked!, j)"
-                                                >
-                                                {{ subcategory.name }}
-                                            </mat-checkbox>
-                                        </li>
-                                    }
-                                </ul>
-                            </div>
-                        }
-                    </div>
-                }
-            </div>
-        </mat-sidenav>
+<div class="flex flex-col h-full">
+    <div class="flex items-center justify-between p-4">
+        <h2 class="text-xl font-bold no-margin">{{ sectionTitle }}</h2>
+        <div class="flex space-x-2">
+            <button mat-icon-button (click)="toggleSearch()">
+                <mat-icon>{{ searchOpen ? 'clear' : 'search' }}</mat-icon>
+            </button>
+            @if (searchOpen) {
+                <input 
+                    type="text" 
+                    placeholder="Search..." 
+                    class="input-search p-2 border rounded text-black" 
+                    [(ngModel)]="filterValue" 
+                    (ngModelChange)="onChangeName($event)" 
+                />
+            }
+            <button mat-icon-button (click)="toggleFilter()">
+                <mat-icon>filter_list</mat-icon>
+            </button>
+        </div>
+    </div>
 
-        <!-- Contenido Principal -->
-        <mat-sidenav-content class="p-4 w-full md:w-[75%] overflow-hidden">
-            <mat-toolbar color="primary" class="justify-between">
-                <div>
-                    <button mat-icon-button (click)="sidenav.toggle()">
-                        <mat-icon>menu</mat-icon>
-                    </button>
-                    <span class="ml-4">Mods availables</span>
-                </div>
-                <div>
-                    <mat-form-field class="w-64" appearance="fill">
-                        <mat-label>Mod name...</mat-label>
-                        <input matInput type="text" [(ngModel)]="value" (ngModelChange)="onChangeName($event)" />
-                        @if (value) {
-                        <button matSuffix mat-icon-button aria-label="Clear" (click)="onResetName()">
-                            <mat-icon>close</mat-icon>
-                        </button>
-                        }
-                    </mat-form-field>
-                </div>
-            </mat-toolbar>
-
-            <div class="p-4">
-                <ng-content>
-                    <div class="grid grid-cols-6 gap-4">
-                        @for (mod of (filteredMods$ | async); track mod.id) {
-                            <app-mod-card [mod]="mod" />
-                        }
-                    </div>
-                </ng-content>
-            </div>
-        </mat-sidenav-content>
-    </mat-sidenav-container>
+    <div class="overflow-y-auto p-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            @for (mod of (filteredMods$ | async); track mod; let i = $index) {
+                <app-mod-card [mod]="mod" />
+            }
+        </div>
+    </div>
 </div>
+
+@if (filterOpen) {
+    <div class="fixed inset-0 bg-gray-900 bg-opacity-75 z-50">
+        <div class="absolute top-0 right-0 w-64 bg-sky-950 h-full p-6 flex flex-col justify-between">
+            <div>
+                <button (click)="toggleFilter()" class="text-white text-left w-full mb-4">
+                    <mat-icon>clear</mat-icon>
+                </button>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Categories</h3>
+                    @for (category of availableMods(); track category; let i = $index) {
+                        <div class="my-3 mx-0">
+                            <span>
+                                <mat-checkbox 
+                                    [checked]="category.completed" 
+                                    [indeterminate]="partiallyComplete()[i]"
+                                    (change)="update(i, $event.checked)"
+                                    >
+                                    {{ category.name }}
+                                </mat-checkbox>
+                            </span>
+                            
+                            @if (category.subCategories?.length) {
+                                <div class="ml-4">
+                                    <ul class="mt-1">
+                                        @for (subcategory of category.subCategories; track subcategory; let j = $index) {
+                                            <li class="mx-3">
+                                                <mat-checkbox 
+                                                    [checked]="subcategory.completed" 
+                                                    (change)="update(i, $event.checked, j)"
+                                                    >
+                                                    {{ subcategory.name }}
+                                                </mat-checkbox>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="text-center">
+                <p>Dtabo</p>
+                <p>&copy; {{ currentYear }}</p>
+            </div>
+        </div>
+    </div>
+}
