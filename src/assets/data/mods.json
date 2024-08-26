@@ -2057,5 +2057,1505 @@
                 "enemyType": "Deviants"
             }
         ]
+    },
+    {
+        "id": 57,
+        "name": "Bombardier Souvenir",
+        "description": "When triggering Unstable Bomber, automatically refill 10% of your magazine",
+        "type": "weapon-mods",
+        "modType": "Unstable Bomber",
+        "category": {
+            "id": 1,
+            "name": "Bomber"
+        },
+        "src": "weapon-mods/bomber/bombardier-souvenir.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Treant",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 58,
+        "name": "Heavy Explosives",
+        "description": "Unstable Bomber inflicts Heavy Attack",
+        "type": "weapon-mods",
+        "modType": "Unstable Bomber",
+        "category": {
+            "id": 1,
+            "name": "Bomber"
+        },
+        "src": "weapon-mods/bomber/heavy-explosives.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Treant",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 59,
+        "name": "Reckless Bomber",
+        "description": "For every 1% Crit rate, Unstable Bomber DMG +0.5%",
+        "type": "weapon-mods",
+        "modType": "Unstable Bomber",
+        "category": {
+            "id": 1,
+            "name": "Bomber"
+        },
+        "src": "weapon-mods/bomber/reckless-bomber.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Treant",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 60,
+        "name": "Super Charged",
+        "description": "Triggering Unstable Bomber grants Unstable Bomber DMG +4% for 3s. Effect can stack up to 6 times",
+        "type": "weapon-mods",
+        "modType": "Unstable Bomber",
+        "category": {
+            "id": 1,
+            "name": "Bomber"
+        },
+        "src": "weapon-mods/bomber/super-charged.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Treant",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 61,
+        "name": "Bounce Rampage",
+        "description": "Bounce deals more DMG as more targets are hit, up to DMG +45%",
+        "type": "weapon-mods",
+        "modType": "Bounce",
+        "category": {
+            "id": 1,
+            "name": "Bounce"
+        },
+        "src": "weapon-mods/bounce/bounce-rampage.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 62,
+        "name": "Not Throw Away Yout Shot",
+        "description": "Bounce can hit allies but deals no DMG and refills 1 bullet",
+        "type": "weapon-mods",
+        "modType": "Bounce",
+        "category": {
+            "id": 1,
+            "name": "Bounce"
+        },
+        "src": "weapon-mods/bounce/not-throw-away-your-shot.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 63,
+        "name": "Super Bullet",
+        "description": "Bounce Crit rate +10%, Bounce Crit DMG +25%",
+        "type": "weapon-mods",
+        "modType": "Bounce",
+        "category": {
+            "id": 1,
+            "name": "Bounce"
+        },
+        "src": "weapon-mods/bounce/super-bullet.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 64,
+        "name": "Targeted Bounce",
+        "description": "Bounce Weakspot Priority +300%",
+        "type": "weapon-mods",
+        "modType": "Bounce",
+        "category": {
+            "id": 1,
+            "name": "Bounce"
+        },
+        "src": "weapon-mods/bounce/targeted-bounce.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 65,
+        "name": "Blaze Blessing",
+        "description": "When defeating an enemy affected by Buen, recover 5% HP",
+        "type": "weapon-mods",
+        "modType": "Burn",
+        "category": {
+            "id": 1,
+            "name": "Burn"
+        },
+        "src": "weapon-mods/burn/blaze-blessing.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Ravenous Hunter",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 66,
+        "name": "Burning Wrath",
+        "description": "Triggering Burn has a 25% chance to grant +1 Burn stacks",
+        "type": "weapon-mods",
+        "modType": "Burn",
+        "category": {
+            "id": 1,
+            "name": "Burn"
+        },
+        "src": "weapon-mods/burn/burning-wrath.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Ravenous Hunter",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 67,
+        "name": "Embers",
+        "description": "When Burn is removed, stacks only -50%",
+        "type": "weapon-mods",
+        "modType": "Burn",
+        "category": {
+            "id": 1,
+            "name": "Burn"
+        },
+        "src": "weapon-mods/burn/embers.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Ravenous Hunter",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 68,
+        "name": "Flame Resonance",
+        "description": "Max Burn stack +2, Burn duration -20.0%",
+        "type": "weapon-mods",
+        "modType": "Burn",
+        "category": {
+            "id": 1,
+            "name": "Burn"
+        },
+        "src": "weapon-mods/burn/flame-resonance.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Ravenous Hunter",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 69,
+        "name": "Cowboy",
+        "description": "After reloading when the magazine is empty, Fast Gunner trigger chance +100% (based on the weapon's Trigger Chance) for 5s. When Fast Gunner reaches max stacks, the duration is increased by 5s",
+        "type": "weapon-mods",
+        "modType": "Fast Gunner",
+        "category": {
+            "id": 1,
+            "name": "Fast Gunner"
+        },
+        "src": "weapon-mods/fast-gunner/cowboy.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 70,
+        "name": "Precision Rush",
+        "description": "When Fast Gunner is active, increase Weakspot DMG while continuosly shooting for 3s, up to 45%",
+        "type": "weapon-mods",
+        "modType": "Fast Gunner",
+        "category": {
+            "id": 1,
+            "name": "Fast Gunner"
+        },
+        "src": "weapon-mods/fast-gunner/precision-rush.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 71,
+        "name": "Shoot Out",
+        "description": "When triggering Fast Gunner, Weapon DMG +1.5% for 10s, up to 20 stack(s)",
+        "type": "weapon-mods",
+        "modType": "Fast Gunner",
+        "category": {
+            "id": 1,
+            "name": "Fast Gunner"
+        },
+        "src": "weapon-mods/fast-gunner/shoot-out.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 72,
+        "name": "Shooting Blitz",
+        "description": "Fast Gunner duration +4s. When Fast Gunner is active, Weapon DMG +15%",
+        "type": "weapon-mods",
+        "modType": "Fast Gunner",
+        "category": {
+            "id": 1,
+            "name": "Fast Gunner"
+        },
+        "src": "weapon-mods/fast-gunner/shooting-blitz.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 73,
+        "name": "Durable Territory",
+        "description": "Every enemy defeated while in Fortress Warfare state will extend the effect by 5s (up to 5 times for every Fortress Warfare)",
+        "type": "weapon-mods",
+        "modType": "Fortress Warfare",
+        "category": {
+            "id": 1,
+            "name": "Fortress Warfare"
+        },
+        "src": "weapon-mods/fortress-warfare/durable-territory.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 74,
+        "name": "Final Territory",
+        "description": "When Fortress Warfare ends, Weapon DMG +10%, Movement Speed +10% for 10s",
+        "type": "weapon-mods",
+        "modType": "Fortress Warfare",
+        "category": {
+            "id": 1,
+            "name": "Fortress Warfare"
+        },
+        "src": "weapon-mods/fortress-warfare/final-territory.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 75,
+        "name": "Portable Territory",
+        "description": "After leaving Fortress Warfare, the status will remain for 2s",
+        "type": "weapon-mods",
+        "modType": "Fortress Warfare",
+        "category": {
+            "id": 1,
+            "name": "Fortress Warfare"
+        },
+        "src": "weapon-mods/fortress-warfare/portable-territory.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 76,
+        "name": "United We Stand",
+        "description": "The more players inside the Fortress Warfare, the grater the Weapon DMG bonus, up to 40%",
+        "type": "weapon-mods",
+        "modType": "Fortress Warfare",
+        "category": {
+            "id": 1,
+            "name": "Fortress Warfare"
+        },
+        "src": "weapon-mods/fortress-warfare/united-we-stand.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 77,
+        "name": "Cryo Blast",
+        "description": "Frost Vortex applies Frosbite. When Frostbite is active, Vulnerability +4% and Movement Speed -10%",
+        "type": "weapon-mods",
+        "modType": "Frost Vortex",
+        "category": {
+            "id": 1,
+            "name": "Frost Vortex"
+        },
+        "src": "weapon-mods/frost-vortex/cryo-blast.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Ravenous Hunter",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 78,
+        "name": "Frosty Blessing",
+        "description": "When Frost Vortex disappears, restore 10% of HP",
+        "type": "weapon-mods",
+        "modType": "Frost Vortex",
+        "category": {
+            "id": 1,
+            "name": "Frost Vortex"
+        },
+        "src": "weapon-mods/frost-vortex/frosty-blessing.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Ravenous Hunter",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 79,
+        "name": "Shattering Ice",
+        "description": "When an enemy at the center of the Front Vortex is defeated, deal 50% PSI Intensity Ice DMG to enemies within 1m one time",
+        "type": "weapon-mods",
+        "modType": "Frost Vortex",
+        "category": {
+            "id": 1,
+            "name": "Frost Vortex"
+        },
+        "src": "weapon-mods/frost-vortex/shattering-ice.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Ravenous Hunter",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 80,
+        "name": "Vortex Multiplier",
+        "description": "Max number of Frost Vortexes +1, Frost Vortex DMG +10%",
+        "type": "weapon-mods",
+        "modType": "Frost Vortex",
+        "category": {
+            "id": 1,
+            "name": "Frost Vortex"
+        },
+        "src": "weapon-mods/frost-vortex/vortex-multiplier.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Ravenous Hunter",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 81,
+        "name": "Shock Diffusion",
+        "description": "When triggering Power Surgem apply the Power Surge to 1 enemies within 5m of the target (prioritizes enemies that are not affected by Power Surge Status)",
+        "type": "weapon-mods",
+        "modType": "Power Surge",
+        "category": {
+            "id": 1,
+            "name": "Power Surge"
+        },
+        "src": "weapon-mods/power-surge/shock-diffusion.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Treant",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 82,
+        "name": "Shock Rampage",
+        "description": "Dealing Power Surge DMG grants +5% Power Surge Trigger Chance (based on weapon's trigger chance) for 5s. Effect can stack up to 4 times",
+        "type": "weapon-mods",
+        "modType": "Power Surge",
+        "category": {
+            "id": 1,
+            "name": "Power Surge"
+        },
+        "src": "weapon-mods/power-surge/shock-rampage.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Treant",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 83,
+        "name": "Static Shock",
+        "description": "Power Surge Status duration -50% Power Surge DMG +20%",
+        "type": "weapon-mods",
+        "modType": "Power Surge",
+        "category": {
+            "id": 1,
+            "name": "Power Surge"
+        },
+        "src": "weapon-mods/power-surge/static-shock.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Treant",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 84,
+        "name": "Surge Amplifier",
+        "description": "Dealing Power Surge DMG grants Power Surge DMG +5% for 3s, up to 4 stack(s)",
+        "type": "weapon-mods",
+        "modType": "Power Surge",
+        "category": {
+            "id": 1,
+            "name": "Power Surge"
+        },
+        "src": "weapon-mods/power-surge/surge-amplifier.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Treant",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 85,
+        "name": "Obliterate",
+        "description": "The more parts the Shrapnel hits, the higher the Shrapnel DMG. Each part +15%",
+        "type": "weapon-mods",
+        "modType": "Shrapnel",
+        "category": {
+            "id": 1,
+            "name": "Shrapnel"
+        },
+        "src": "weapon-mods/shrapnel/obliterate.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 86,
+        "name": "Shield Breaker",
+        "description": "When hitting a shielded enemy, Shrapnel DMG +60% for 1s",
+        "type": "weapon-mods",
+        "modType": "Shrapnel",
+        "category": {
+            "id": 1,
+            "name": "Shrapnel"
+        },
+        "src": "weapon-mods/shrapnel/shield-breaker.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 87,
+        "name": "Shrapnel Smash",
+        "description": "Triggering Shrapnel grants +1.0% Shrapnel Crit Rate for 2 seconds, up to 20 stacks",
+        "type": "weapon-mods",
+        "modType": "Shrapnel",
+        "category": {
+            "id": 1,
+            "name": "Shrapnel"
+        },
+        "src": "weapon-mods/shrapnel/shrapnel-smash.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 88,
+        "name": "Shrapnel Souvenir",
+        "description": "When Shrapnel hits a Weakspot, automatically refills 1 bullet from inventory",
+        "type": "weapon-mods",
+        "modType": "Shrapnel",
+        "category": {
+            "id": 1,
+            "name": "Shrapnel"
+        },
+        "src": "weapon-mods/shrapnel/shrapnel-souvenir.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1,
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 89,
+        "name": "Hunters Perk",
+        "description": "Marked enemies DMG vs. Metas -20%",
+        "type": "weapon-mods",
+        "modType": "The Bull's Eye",
+        "category": {
+            "id": 1,
+            "name": "The Bull's Eye"
+        },
+        "src": "weapon-mods/the-bulls-eye/hunters-perk.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 90,
+        "name": "Recover Mark",
+        "description": "When defeating marked enemies, recover 15% HP and 25% stamina",
+        "type": "weapon-mods",
+        "modType": "The Bull's Eye",
+        "category": {
+            "id": 1,
+            "name": "The Bull's Eye"
+        },
+        "src": "weapon-mods/the-bulls-eye/recover-mark.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 91,
+        "name": "Spreading Marks",
+        "description": "When a marked enemy is defeated, The Bull's Eye will spread to 1 enemies within 15m",
+        "type": "weapon-mods",
+        "modType": "The Bull's Eye",
+        "category": {
+            "id": 1,
+            "name": "The Bull's Eye"
+        },
+        "src": "weapon-mods/the-bulls-eye/spreading-marks.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
+    },
+    {
+        "id": 92,
+        "name": "Vulnerability Amplifier",
+        "description": "The Bull's Eye adds Vulnerability +8%",
+        "type": "weapon-mods",
+        "modType": "The Bull's Eye",
+        "category": {
+            "id": 1,
+            "name": "The Bull's Eye"
+        },
+        "src": "weapon-mods/the-bulls-eye/vulnerability-amplifier.png",
+        "dropLocation": [
+            {
+                "name": "Shadow Hound",
+                "mode": [
+                    1
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Arachsiam",
+                "mode": [
+                    2,
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "Forsaken Giant",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Great one / Boss"
+            },
+            {
+                "name": "LEA Lab",
+                "mode": [
+                    3
+                ],
+                "enemyType": "Deviants"
+            }
+        ]
     }
+    
 ]
