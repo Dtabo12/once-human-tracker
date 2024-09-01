@@ -1,5 +1,5 @@
-@import 'src/styles.scss';
 @import 'src/assets/styles/colors.scss';
+@import 'src/assets/styles/mixins.scss';
 
 .darker {
     background-color: $dark-base;

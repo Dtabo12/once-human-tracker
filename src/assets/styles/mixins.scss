@@ -1,0 +1,7 @@
+@mixin filter-shadow($x, $y, $blur, $color) {
+    filter: drop-shadow(#{$x}px #{$y}px #{$blur}px #{$color});
+}
+
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: #{$x}px #{$y}px #{$blur}px #{$color};
+}
