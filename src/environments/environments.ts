@@ -7,6 +7,7 @@ export const ENV = {
   usefullRoutes: {
     officialSite: 'https://www.oncehuman.game/',
     interactiveMap: 'https://oncehuman.th.gl/',
-    doomerisSheet: ''
+    doomerisSheet: '',
+    dtaboDc: 'https://discord.com/users/600537415119011850'
   }
 }

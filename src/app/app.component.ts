@@ -23,6 +23,8 @@ import { ENV } from 'src/environments/environments';
 import { NavigatorComponent } from './core/components/navigator/navigator.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ModsTrackerComponent } from './pages/mods-tracker/mods-tracker.component';
+import { LegalNoticeComponent } from './pages/legal-notice/legal-notice.component';
+import { ImagePathPipe } from '@shared/pipes';
 
 const COMMON_IMPORTS = [
   CommonModule,
@@ -49,6 +51,8 @@ const COMMON_IMPORTS = [
   HomeComponent,
   ModsTrackerComponent,
   NavigatorComponent,
+  LegalNoticeComponent,
+  ImagePathPipe
 ];
 
 @Component({

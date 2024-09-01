@@ -1,0 +1,39 @@
+<div class="flex flex-col h-full justify-center items-center">
+    <mat-card class="mx-2 notice-card max-w-lg" appearance="raised">
+        <mat-card-header>
+            <mat-card-title>
+                <span class="flex items-center font-sans">
+                    <mat-icon>lock</mat-icon>
+                    Legal Notice
+                </span>
+            </mat-card-title>
+        </mat-card-header>
+
+        <img mat-card-image [src]="'general/legal-notice.jpg' | imagePath" alt="legal-notice" class="py-2 opacity-50" />
+
+        <mat-card-content>
+            <div class="flex flex-row gap-4 justify-center my-2">
+                <div class="flex flex-col gap-2 w-[70%]">
+                    <span class="font-sans font-semibold text-sm sm:text-lg">
+                        The apps and developers showcased on this site have no official connection with the game companies.
+                    </span>
+                    <span class="font-sans font-semibold text-sm sm:text-lg">
+                        All trademarks, service marks, trade names, product names, and logos displayed on this site belong to their respective owners.
+                    </span>
+                </div>
+    
+                <div class="flex flex-col justify-center items-center w-[30%]">
+                    <span class="font-sans font-semibold text-sm sm:text-lg">&copy; {{ currentYear }} | Dtabo</span>
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <div class="flex w-full justify-end">
+                <button type="button" class="flex justify-center items-center gap-2 px-1 rounded discord-btn" (click)="onClic()">
+                    <i class='bx bxl-discord-alt' ></i>
+                    <span class="font-semibold">dtabo_12</span>
+                </button>
+            </div>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,15 @@
+@import 'src/styles.scss';
+
+.notice-card {
+    @include filter-shadow(0, 4, 8, rgba(255, 255, 255, .2));
+}
+
+.discord-btn {
+    background-color: $blurple;
+
+    &:hover {
+        background-color: var($blurple-hvr);
+        transform: translateY(-2px);
+        @include box-shadow(0, 2, 9, $blurple-shw);
+    }
+}
