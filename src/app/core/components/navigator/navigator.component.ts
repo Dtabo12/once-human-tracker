@@ -1,11 +1,22 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import COMMON_IMPORTS from 'src/app/app.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { RouterLink } from '@angular/router';
 import { ENV } from 'src/environments/environments';
+
+const COMMON_IMPORTS = [
+  /* Modules */
+  RouterLink,
+  MatDividerModule,
+  MatIconModule,
+  MatListModule,
+];
 
 @Component({
   selector: 'app-navigator',
   standalone: true,
-  imports: [COMMON_IMPORTS],
+  imports: COMMON_IMPORTS,
   templateUrl: './navigator.component.html',
   styleUrl: './navigator.component.scss'
 })

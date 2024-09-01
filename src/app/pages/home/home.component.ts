@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import COMMON_IMPORTS from 'src/app/app.component';
 import { ENV } from 'src/environments/environments';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [COMMON_IMPORTS],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -1,20 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component, computed, inject, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { Store } from '@ngrx/store';
+import { SharedModule } from '@shared/shared.module';
 import { map, Observable } from 'rxjs';
 import { modActions } from '../stores/mod.action';
 import { selectData } from '../stores/mod.reducer';
 import { ModCategories } from '../types/mods-categories.type';
 import { Mod } from '../types/mods.type';
-import { MatIconModule } from '@angular/material/icon';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatInputModule } from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { SharedModule } from '@shared/shared.module';
-import { MatTooltipModule } from '@angular/material/tooltip';
 
 const COMMON_IMPORTS: CommonModule[] = [
+  /* Modules */
   CommonModule,
   MatIconModule,
   MatCheckboxModule,
@@ -106,11 +107,11 @@ export class ModsTrackerComponent {
       } else {
         const submod = mod.subCategories![subcategoryIndex];
         submod.completed = completed;
-        
+
         if (mod.subCategories?.every(t => t.completed)) {
           console.log('👀if');
           mod.completed = true;
-          
+
           this.updateSelectedCategories(mod, true);
         } else {
           console.log('👀else');
@@ -126,7 +127,7 @@ export class ModsTrackerComponent {
 
   private updateSelectedCategories(mod: ModCategories, completed: boolean) {
     const selectedMods = this.selectedCategories();
-  
+
     if (completed) {
       if (!selectedMods.includes(mod)) {
         this.selectedCategories.set([...selectedMods, mod]);
@@ -146,7 +147,7 @@ export class ModsTrackerComponent {
     selectedMods.filter
 
     //2. Cuando se seleccionan una o más subcategorías
-    
+
   }
 
   onResetName(): void {
