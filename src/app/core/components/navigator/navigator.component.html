@@ -1,0 +1,35 @@
+<div class="w-full flex justify-end">
+    <button type="button" class="m-2" (click)="onClose()">
+        <mat-icon>clear</mat-icon>
+    </button>
+</div>
+<mat-nav-list>
+    <a routerLink="/" mat-list-item (click)="onClose()">
+        <span matListItemTitle>Home</span>
+    </a>
+    <a routerLink="mods" mat-list-item (click)="onClose()">
+        <span matListItemTitle>Mods Tracker</span>
+        <span matLine>Find it, Get it</span>
+    </a>
+    <a routerLink="builds" mat-list-item (click)="onClose()">
+        <span matListItemTitle>Build Tracker</span>
+        <span matLine>Plan, Build, Beat them</span>
+    </a>
+    <mat-divider />
+    <a [href]="officialSiteUrl" target="_blank" mat-list-item>
+        <span matListItemTitle>Official site</span>
+        <span matLine>Once Human main site</span>
+    </a>
+    <a [href]="interactiveMapUrl" target="_blank" mat-list-item>
+        <span matListItemTitle>Interactive Map</span>
+        <span matLine>Nothing can hide you</span>
+    </a>
+    <mat-divider />
+    <mat-divider />
+    <a routerLink="legal" mat-list-item (click)="onClose()">
+        <span matListItemTitle>Legal</span>
+    </a>
+    <a routerLink="privacy" mat-list-item (click)="onClose()">
+        <span matListItemTitle>Privacy Policy</span>
+    </a>
+</mat-nav-list>
