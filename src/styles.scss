@@ -4,6 +4,14 @@
 @tailwind utilities;
 @import './assets/styles/colors.scss';
 
+@mixin filter-shadow($x, $y, $blur, $color) {
+    filter: drop-shadow(#{$x}px #{$y}px #{$blur}px #{$color});
+}
+
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: #{$x}px #{$y}px #{$blur}px #{$color};
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .no-margin {
