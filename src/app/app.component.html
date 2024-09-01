@@ -1,4 +1,19 @@
-<app-header />
-<section class="h-[95vh] overflow-y-auto flex flex-col darker">
-  <app-mods-tracker class="flex-1" />
-</section>
+<main class="flex w-full h-full darker">
+  <mat-drawer-container [hasBackdrop]="true" class="w-full h-full">
+    <mat-drawer #drawer [mode]="'over'">
+      <app-navigator (closeDrawer)="drawer.toggle()" />
+    </mat-drawer>
+
+    <mat-drawer-content>
+      <section class="h-full flex flex-col-reverse sm:flex-col items-center">
+        <button type="button" class="mt-2" (click)="drawer.toggle()">
+          <img [src]="onceHumanLogo" alt="once-human-logo" class="once-logo h-12" />
+        </button>
+
+        <div class="h-full w-full">
+          <router-outlet />
+        </div>
+      </section>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</main>
