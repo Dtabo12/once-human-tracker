@@ -15,5 +15,10 @@ export const routes: Routes = [
     path: 'mods',
     loadComponent: () =>
       import('./pages/mods-tracker/mods-tracker.component').then((a) => a.ModsTrackerComponent),
-  }
+  },
+  {
+    path: 'legal',
+    loadComponent: () =>
+      import('./pages/legal-notice/legal-notice.component').then((a) => a.LegalNoticeComponent),
+  },
 ];

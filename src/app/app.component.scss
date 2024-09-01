@@ -1,5 +1,10 @@
+@import 'src/styles.scss';
 @import 'src/assets/styles/colors.scss';
 
 .darker {
     background-color: $dark-base;
+}
+
+.once-logo {
+    @include filter-shadow(0, 0, 6, rgb(26, 203, 209));
 }
